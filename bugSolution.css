@@ -1,0 +1,17 @@
+To avoid this problem, it's crucial to follow best practices:
+
+1. **Avoid inline styles whenever possible.**  Inline styles are generally a bad practice. If you have styles that need to be applied, use internal or external stylesheets instead.
+2. **Understand CSS Specificity.** Ensure you are aware of how specificity works in CSS. If you are unsure, try using a CSS specificity calculator online.
+3. **Be Consistent.** Use a consistent naming convention for your classes and IDs to make it easier to track which styles are taking precedence.
+4. **Use !important (With Caution).** The `!important` rule can override any other styles, but it should be used very sparingly. Overusing `!important` can lead to more difficult debugging later.
+
+```css
+/* bugSolution.css - Demonstrates correct handling of styles */
+#myElement {
+  color: blue;
+}
+
+.myClass {
+  font-weight: bold;
+}
+```
